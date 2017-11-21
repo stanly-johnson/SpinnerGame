@@ -83,13 +83,47 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fullScoreView" destination="W5s-MZ-hxx" id="qaT-JV-Fid"/>
                         <outlet property="slider" destination="jjk-tB-VXM" id="62e-v0-Lzb"/>
                         <outlet property="userTextField" destination="h4t-lG-aXN" id="z26-B1-ihU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="W5s-MZ-hxx" userLabel="FullScoreView">
+                    <rect key="frame" x="0.0" y="0.0" width="348" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hHY-Ru-Tlg">
+                            <rect key="frame" x="0.0" y="0.0" width="348" height="500"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqa-BN-1KZ">
+                            <rect key="frame" x="99" y="450" width="150" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="WQb-ae-b0O"/>
+                            </constraints>
+                            <state key="normal" title="Go Back"/>
+                            <connections>
+                                <action selector="actionExitView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLv-di-j7m"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25246875000000002" green="0.25246875000000002" blue="0.25246875000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hHY-Ru-Tlg" firstAttribute="top" secondItem="W5s-MZ-hxx" secondAttribute="top" id="AIQ-qg-h5g"/>
+                        <constraint firstAttribute="trailing" secondItem="hHY-Ru-Tlg" secondAttribute="trailing" id="Bcx-kl-Bod"/>
+                        <constraint firstAttribute="trailing" secondItem="Yqa-BN-1KZ" secondAttribute="trailing" constant="99" id="IUH-6K-R4n"/>
+                        <constraint firstItem="hHY-Ru-Tlg" firstAttribute="leading" secondItem="W5s-MZ-hxx" secondAttribute="leading" id="U3F-PC-pTN"/>
+                        <constraint firstAttribute="bottom" secondItem="hHY-Ru-Tlg" secondAttribute="bottom" id="aCj-wV-JBD"/>
+                        <constraint firstItem="Yqa-BN-1KZ" firstAttribute="leading" secondItem="W5s-MZ-hxx" secondAttribute="leading" constant="99" id="cyl-zi-IQM"/>
+                        <constraint firstItem="Yqa-BN-1KZ" firstAttribute="top" secondItem="W5s-MZ-hxx" secondAttribute="top" constant="450" id="d7u-pn-ETn"/>
+                        <constraint firstAttribute="bottom" secondItem="Yqa-BN-1KZ" secondAttribute="bottom" constant="20" id="xXR-QN-qlN"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg" width="2298" height="2318"/>
+    </resources>
 </document>

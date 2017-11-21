@@ -15,6 +15,7 @@
 		4C1A27CF1FC42F070078567D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A27CD1FC42F070078567D /* LaunchScreen.storyboard */; };
 		4C1A27DA1FC42F070078567D /* SpinnerGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27D91FC42F070078567D /* SpinnerGameTests.swift */; };
 		4C1A27E51FC42F070078567D /* SpinnerGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27E41FC42F070078567D /* SpinnerGameUITests.swift */; };
+		4C1A27F51FC4506B0078567D /* a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A27F41FC4506B0078567D /* a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4C1A27E01FC42F070078567D /* SpinnerGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinnerGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A27E41FC42F070078567D /* SpinnerGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerGameUITests.swift; sourceTree = "<group>"; };
 		4C1A27E61FC42F070078567D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1A27F41FC4506B0078567D /* a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4C1A27C11FC42F060078567D /* AppDelegate.swift */,
 				4C1A27C31FC42F060078567D /* MainScreen.swift */,
 				4C1A27C51FC42F060078567D /* Main.storyboard */,
+				4C1A27F41FC4506B0078567D /* a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg */,
 				4C1A27CB1FC42F070078567D /* Assets.xcassets */,
 				4C1A27CD1FC42F070078567D /* LaunchScreen.storyboard */,
 				4C1A27D01FC42F070078567D /* Info.plist */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1A27F51FC4506B0078567D /* a297c5c2-5f90-418b-8529-20a41c89c1ac.jpg in Resources */,
 				4C1A27CF1FC42F070078567D /* LaunchScreen.storyboard in Resources */,
 				4C1A27CC1FC42F070078567D /* Assets.xcassets in Resources */,
 				4C1A27C71FC42F060078567D /* Main.storyboard in Resources */,
