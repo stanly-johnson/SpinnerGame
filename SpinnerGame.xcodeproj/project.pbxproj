@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C1A27C21FC42F060078567D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27C11FC42F060078567D /* AppDelegate.swift */; };
-		4C1A27C41FC42F060078567D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27C31FC42F060078567D /* ViewController.swift */; };
+		4C1A27C41FC42F060078567D /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27C31FC42F060078567D /* MainScreen.swift */; };
 		4C1A27C71FC42F060078567D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A27C51FC42F060078567D /* Main.storyboard */; };
 		4C1A27CA1FC42F070078567D /* SpinnerGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A27C81FC42F070078567D /* SpinnerGame.xcdatamodeld */; };
 		4C1A27CC1FC42F070078567D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A27CB1FC42F070078567D /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		4C1A27BE1FC42F060078567D /* SpinnerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinnerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A27C11FC42F060078567D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C1A27C31FC42F060078567D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C1A27C31FC42F060078567D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		4C1A27C61FC42F060078567D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C1A27C91FC42F070078567D /* SpinnerGame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpinnerGame.xcdatamodel; sourceTree = "<group>"; };
 		4C1A27CB1FC42F070078567D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1A27C11FC42F060078567D /* AppDelegate.swift */,
-				4C1A27C31FC42F060078567D /* ViewController.swift */,
+				4C1A27C31FC42F060078567D /* MainScreen.swift */,
 				4C1A27C51FC42F060078567D /* Main.storyboard */,
 				4C1A27CB1FC42F070078567D /* Assets.xcassets */,
 				4C1A27CD1FC42F070078567D /* LaunchScreen.storyboard */,
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A27C41FC42F060078567D /* ViewController.swift in Sources */,
+				4C1A27C41FC42F060078567D /* MainScreen.swift in Sources */,
 				4C1A27C21FC42F060078567D /* AppDelegate.swift in Sources */,
 				4C1A27CA1FC42F070078567D /* SpinnerGame.xcdatamodeld in Sources */,
 			);

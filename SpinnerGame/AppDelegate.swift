@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SpinnerGame
 //
-//  Created by reubro on 21/11/17.
+//  Created by Stanly on 21/11/17.
 //  Copyright © 2017 Stanly. All rights reserved.
 //
 
