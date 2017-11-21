@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,21 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jjk-tB-VXM">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jjk-tB-VXM">
                                 <rect key="frame" x="21" y="275" width="340" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.17462440779999999" green="0.20289583329999999" blue="0.1912743338" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.9716706049324334" green="0.79859025958553476" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="phV-6J-DCb"/>
+                                </constraints>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the value of the slider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-hm-HWT">
-                                <rect key="frame" x="0.0" y="68" width="375" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-lG-aXN">
+                                <rect key="frame" x="228" y="386" width="92" height="30"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-o3-tbC">
-                                <rect key="frame" x="41" y="376" width="131" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-o3-tbC">
+                                <rect key="frame" x="41" y="376" width="156" height="50"/>
                                 <color key="backgroundColor" red="0.2402361375" green="0.60379635379999996" blue="0.99835759400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.93608632407290882" green="1" blue="0.96199973075756406" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,19 +46,40 @@
                                     <action selector="actionSubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKs-Wo-Hp9"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter here!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-lG-aXN">
-                                <rect key="frame" x="203" y="386" width="117" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Foh-2a-jFe">
+                                <rect key="frame" x="130" y="570" width="115" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="actionResetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sep-LU-Fsl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess the value of the slider" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSQ-hm-HWT">
+                                <rect key="frame" x="0.0" y="178" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FSQ-hm-HWT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="Vf0-g2-PaQ"/>
-                            <constraint firstAttribute="trailing" secondItem="FSQ-hm-HWT" secondAttribute="trailing" id="lE7-aV-CBq"/>
-                            <constraint firstItem="FSQ-hm-HWT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vlp-hT-rMz"/>
+                            <constraint firstItem="Foh-2a-jFe" firstAttribute="top" secondItem="Kfe-o3-tbC" secondAttribute="bottom" constant="144" id="4mp-2g-YdJ"/>
+                            <constraint firstItem="jjk-tB-VXM" firstAttribute="top" secondItem="FSQ-hm-HWT" secondAttribute="bottom" constant="76.5" id="6Mq-D1-qOE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Foh-2a-jFe" secondAttribute="bottom" constant="67" id="8g8-l4-cq7"/>
+                            <constraint firstItem="jjk-tB-VXM" firstAttribute="top" secondItem="FSQ-hm-HWT" secondAttribute="bottom" constant="76.5" id="DdP-i7-Fe9"/>
+                            <constraint firstItem="Kfe-o3-tbC" firstAttribute="top" secondItem="jjk-tB-VXM" secondAttribute="bottom" constant="71" id="H9Q-nQ-HJT"/>
+                            <constraint firstItem="Foh-2a-jFe" firstAttribute="top" secondItem="h4t-lG-aXN" secondAttribute="bottom" constant="154" id="Hok-vg-cfc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Foh-2a-jFe" secondAttribute="trailing" constant="114" id="J6Y-vo-nFl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h4t-lG-aXN" secondAttribute="trailing" constant="39" id="Jv8-Nl-CZ8"/>
+                            <constraint firstItem="h4t-lG-aXN" firstAttribute="leading" secondItem="Kfe-o3-tbC" secondAttribute="trailing" constant="31" id="LqI-t9-1yQ"/>
+                            <constraint firstItem="h4t-lG-aXN" firstAttribute="top" secondItem="jjk-tB-VXM" secondAttribute="bottom" constant="81" id="OJE-6s-WKD"/>
+                            <constraint firstAttribute="trailing" secondItem="FSQ-hm-HWT" secondAttribute="trailing" id="Ogs-tW-6SE"/>
+                            <constraint firstItem="FSQ-hm-HWT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P5I-bs-DjQ"/>
+                            <constraint firstItem="jjk-tB-VXM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="TIc-oP-WAV"/>
+                            <constraint firstItem="FSQ-hm-HWT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="158" id="Y2s-r8-HuF"/>
+                            <constraint firstItem="jjk-tB-VXM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gNq-9c-qY1"/>
+                            <constraint firstItem="Kfe-o3-tbC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="hV7-7d-yQR"/>
+                            <constraint firstItem="Kfe-o3-tbC" firstAttribute="top" secondItem="jjk-tB-VXM" secondAttribute="bottom" constant="71" id="tL3-Mn-kty"/>
+                            <constraint firstItem="Foh-2a-jFe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="114" id="yoH-r5-Ah1"/>
                         </constraints>
                     </view>
                     <connections>

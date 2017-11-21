@@ -37,18 +37,24 @@ class MainScreen: UIViewController {
         
         let score = scoreCalc(guess: inputValue)
         
-        let alert = UIAlertController(title: "You have scored \(score)", message: "The original value was \(randomValue)" , preferredStyle: .alert)
+        let alert = UIAlertController(title: "You have scored \(score)%", message: "The original value was \(randomValue)" , preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
      
         
     }
+    
+    
+    @IBAction func actionResetButtonTapped(_ sender: Any)
+    {
+        initGame()
+    }
 
 
     func scoreCalc(guess : Int) -> Int
     {
-        let diff = (guess - randomValue)
+        let diff = abs(guess - randomValue)
         return (100 - diff)
     }
     
@@ -56,6 +62,8 @@ class MainScreen: UIViewController {
     {
         randomValue = 1 + (Int(arc4random()) % 100)
         slider.setValue(Float(randomValue), animated: true)
+        userTextField.text = ""
+        
     }
 
 }
