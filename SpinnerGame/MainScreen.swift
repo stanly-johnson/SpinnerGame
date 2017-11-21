@@ -44,7 +44,7 @@ class MainScreen: UIViewController {
         if(score == 100)
         {
             self.view.endEditing(true)
-            self.fullScoreView.frame = CGRect(x: 0.0, y: -20.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
+            self.fullScoreView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
             self.view.addSubview(self.fullScoreView)
             //sleep(50)
             //fullScoreView.removeFromSuperview()
